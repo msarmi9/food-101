@@ -1,47 +1,34 @@
 #! /usr/bin/env bash
-# train_test_split.sh -- split Food-101 dataset into Imagenet-style train/ and test/ folders.
+# train_test_split.sh -- split Food-101 dataset into Imagenet-style train/ and valid/ folders.
 
-# Food-101 subdirs
 DATA_PATH=data
 IMAGE_PATH=$DATA_PATH/images
 META_PATH=$DATA_PATH/meta
 
-# Input files specifying train-test splits 
 CLASSES=$META_PATH/classes.txt
 TRAIN_IMAGES=$META_PATH/train.txt
 TEST_IMAGES=$META_PATH/test.txt
 
-# Output dirs
 TRAIN_DIR=$DATA_PATH/train
-TEST_DIR=$DATA_PATH/test
+TEST_DIR=$DATA_PATH/valid
 
-# Create subdirs for each train class and a flat test dir
 function make_train_test_dirs {
     echo "Creating $TRAIN_DIR and $TEST_DIR dirs ..."
     while read cls; do
-        mkdir -p $TRAIN_DIR/$cls
+        mkdir -p $TRAIN_DIR/$cls $TEST_DIR/$cls
     done < $CLASSES
-    mkdir $TEST_DIR
 }
 
-# Copy train images to class subdirs 
-function copy_train_images {
-    echo "Copying images from $TRAIN_IMAGES to $TRAIN_DIR ..."
-    while read img; do
-        cp $IMAGE_PATH/$img.jpg $TRAIN_DIR/$img.jpg
-    done < $TRAIN_IMAGES
-}
+function copy_images {
+    IMAGE_NAMES=$1
+    OUTPUT_DIR=$2
+    echo "Copying images from $IMAGE_NAMES to $OUTPUT_DIR ..."
 
-# Copy test images to directly under test/
-function copy_test_images {
-    echo "Copying images from $TEST_IMAGES to $TEST_DIR ..."
     while read img; do
-        FILE=$(basename $img) 
-        cp $IMAGE_PATH/$img.jpg $TEST_DIR/$FILE.jpg
-    done < $TEST_IMAGES
+        cp $IMAGE_PATH/$img.jpg $OUTPUT_DIR/$img.jpg
+    done < $IMAGE_NAMES
 }
 
 make_train_test_dirs
-copy_train_images
-copy_test_images
-
+copy_images $TRAIN_IMAGES $TRAIN_DIR
+copy_images $TEST_IMAGES $TEST_DIR
