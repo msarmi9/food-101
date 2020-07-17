@@ -1,3 +1,4 @@
+fastai2
 jupyter
 jupyter-contrib-nbextensions
 torch
