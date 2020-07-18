@@ -2,12 +2,12 @@
 # tinyfy_food_101.sh -- make a tiny version of the food-101 dataset
 
 DATA_PATH=data/
-FOOD_101=$DATA_PATH/food-101
-FOOD_101_TINY=$DATA_PATH/food-101-tiny
+FOOD_101=$DATA_PATH/food-101-split
+FOOD_101_TINY=$DATA_PATH/food-101-tiniest
 
 CLASSES="apple_pie bibimbap cannoli edamame falafel french_toast ice_cream ramen sushi tiramisu"
-TRAIN_SIZE=250
-VALID_SIZE=84
+TRAIN_SIZE=150
+VALID_SIZE=50
 
 function make_train_test_dirs {
     for cls in $CLASSES; do
