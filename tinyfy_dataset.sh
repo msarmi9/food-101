@@ -3,7 +3,7 @@
 
 DATA_PATH=data/
 FOOD_101=$DATA_PATH/food-101-split
-FOOD_101_TINY=$DATA_PATH/food-101-tiniest
+FOOD_101_TINY=$DATA_PATH/food-101-tiny
 
 CLASSES="apple_pie bibimbap cannoli edamame falafel french_toast ice_cream ramen sushi tiramisu"
 TRAIN_SIZE=150
