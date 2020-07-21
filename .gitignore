@@ -1,3 +1,6 @@
+# Ignore frozen notebook html
+html/
+
 # Ignore serialised models
 models/
 
