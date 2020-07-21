@@ -1,3 +1,6 @@
+# Ignore serialised models
+models/
+
 # Ignore data
 data/
 
