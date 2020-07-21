@@ -2,7 +2,7 @@
 
 Welcome! This repo is home to our submission for `Fellowship.ai`'s Fall 2020 Food-101 Challenge. Using progressive re-sizing with 8 augmentations at training time and 4 augmentations at test time, we're able to achieve `90.07%` accuracy on the validation set. Along the way we've tried a variety of approaches, including label smoothing and mixup. This README summarizes our results and points you to the correct notebook for each training run.
 
-The best place to start is our [prototype notebook](notebooks/food-101-tiny/MS-food-101-tiny-fastai2.ipynb), which contains detailed explanations of all of our experiments conducted on a small subset of the `food-101` dataset that we call `food-101-tiny`. The `food-101-tiny` dataset contains 150 training images and 50 validation images from ten classes of foods: `apple pie, bibimbap, cannoli, edamame, falafel, french toast, ice cream, ramen, sushi, and tiramisu`. You can find the `food-101-tiny` dataset on [kaggle]().
+The best place to start is our [prototype notebook](notebooks/food-101-tiny/MS-food-101-tiny-fastai2.ipynb), which contains detailed explanations of all of our experiments conducted on a small subset of the `food-101` dataset that we call `food-101-tiny`. The `food-101-tiny` dataset contains 150 training images and 50 validation images from ten classes of foods: `apple pie, bibimbap, cannoli, edamame, falafel, french toast, ice cream, ramen, sushi, and tiramisu`. You can find the `food-101-tiny` dataset on [kaggle](https://www.kaggle.com/msarmi9/food101tiny).
 
 To quickly jump to the notebook detailing our best training run, [click here](notebooks/kaggle-resize-02/MS-food-101-fastai2-kaggle-resize-02.ipynb).
 
