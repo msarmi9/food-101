@@ -8,7 +8,7 @@ To quickly jump to the notebook detailing our best training run, [click here](no
 
 # Summary of Results
 
-The table below summarizes the results of our training runs on the `Food-101` dataset with links to each notebook. CrossEntropyLoss is used throughout.
+The table below summarizes the results of our training runs on the `Food-101` dataset with links to each notebook. A pre-trained `resnet-50` with Adam as the optimizer and cross entropy as the loss are used throughout.
 
 | Experiment | Epochs | Train Loss | Valid Loss | Valid Accuracy | TTA Accuracy |
 |------------|--------|------------|------------|----------------|--------------|
