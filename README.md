@@ -16,11 +16,9 @@ The table below summarizes the results of our training runs on the `Food-101` da
 | [Progressive Resizing](notebooks/colab-resize-01/MS-food-101-fastai2-colab-resize-01.ipynb) | 16 | 0.4144 | 0.3990 | 0.8874 | 0.8952 |
 | [Progressive Resizing](notebooks/kaggle-resize-02/MS-food-101-fastai2-kaggle-resize-02.ipynb) | 18  | 0.3341 | 0.4094 | 0.8878 | __0.9007__ |
 | [Progressive Resizing](notebooks/colab-resize-02/MS-food-101-fastai2-colab-resize-02.ipynb) | 20 | 0.2809 | 0.4090 | 0.8870 | 0.8952 |
+| [Resize + MixUp](notebooks/colab-mixup-01/MS-food-101-fastai2-colab-mixup-01.ipynb) | 26 | 1.4152 | 0.3996 | 0.8940 | 0.8995 |
 | [Resize + Label Smoothing](notebooks/colab-smooth-01/MS-food-101-fastai2-colab-smooth-01.ipynb) | 24 | 1.0312 | 1.1634 | 0.8941 | 0.8984 |
 | [Resize + Label Smoothing](notebooks/colab-smooth-02/MS-food-101-fastai2-colab-smoooth-02.ipynb) | 24 | 0.9968 | 1.1621 | 0.8929 | 0.8993 |
-| Resize + Label Smoothing | | | | | |
-| [Resize + MixUp](notebooks/colab-mixup-01/MS-food-101-fastai2-colab-mixup-01.ipynb) | 26 | 1.4152 | 0.3996 | 0.8940 | 0.8995 |
-| Resize + MixUp | | | | | |
 | Label Smoothing | 11 | 1.0873 | 1.1955 | 0.8816 | |
 
 # Summary of Findings
