@@ -26,5 +26,5 @@ The table below summarizes the results of our training runs on the `Food-101` da
 This section summarizes the key findings from our experiments:
 
 * Progressive resizing provides a significant performance boost with no added training cost or model complexity.
-* Label smoothing helps models generalize by tempering the confidence of their predictions. To our surpise, label smoothing by itself was able to match our progressive resizing baseline model with significantly fewer epochs.
+* Label smoothing helps models generalize by tempering the confidence of their predictions. To our surpise, label smoothing by itself was able to match our progressive resizing baseline with significantly fewer epochs.
 * MixUp can boost performance but may require many more epochs to converge.
